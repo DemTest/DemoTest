@@ -16,12 +16,9 @@ public class ZhaDai : MonoBehaviour {
 		
 	}
 
-    void DestroySelf()
-    {
-        
-    }
-
-    private void OnCollisionEnter(Collision collision)
+   
+    
+    void OnCollisionEnter(Collision collision)
     {
         Debug.Log("lai");
         if (collision.gameObject.name=="Plane")
