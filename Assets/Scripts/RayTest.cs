@@ -8,7 +8,7 @@ public class RayTest : MonoBehaviour {
 
     private void Awake()
     {
-        
+        Debug.Log("holle world");
     }
 
 
