@@ -6,6 +6,7 @@ public class RayTest : MonoBehaviour {
 
 
 
+<<<<<<< HEAD
     private void Awake()
     {
         Debug.Log("holle world");
@@ -15,6 +16,13 @@ public class RayTest : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+=======
+
+
+
+	// Use this for initialization
+	void Start () {
+>>>>>>> 8ad939cabe481cad0d2b65a0748e394ac813dd3b
 		
 	}
 	
