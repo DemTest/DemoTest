@@ -10,7 +10,12 @@ public class RayTest : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+    {
+        if(Input.GetMouseButtonDown(0))
+        {
+           Ray ray= Camera.main.ScreenPointToRay(Input.mousePosition);
+        }
+
 	}
 }

@@ -13,7 +13,7 @@ public class Instantiate : MonoBehaviour
 	void Start ()
 	{
 
-	    InvokeRepeating("CreatCol", 5, 5);
+	    InvokeRepeating("CreatCol", 1, 2);
 	    
 
     }
@@ -25,11 +25,11 @@ public class Instantiate : MonoBehaviour
 
     void CreatCol()
     {
-        for(int i=0;i<5;i++)
+        for(int i=0;i<3;i++)
         { 
-        GameObject col = GameObject.Instantiate(obj, new Vector3(Random.Range(-9.59f, 10.02f), -0.5f, Random.Range(-7.85f, 8.26f)), Quaternion.identity);
+        GameObject col = GameObject.Instantiate(obj, new Vector3(Random.Range(-6.35f, 8.38f), 15.36f, Random.Range(-6.58f, 5.67f)), Quaternion.identity);
             col.transform.parent = tr;
-            col.transform.Rotate(new Vector3(90, 0, 0));
+            //col.transform.Rotate(new Vector3(90, 0, 0));
         }
     }
 
