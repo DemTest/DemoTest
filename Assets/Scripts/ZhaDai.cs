@@ -14,6 +14,7 @@ public class ZhaDai : MonoBehaviour {
 	void Update ()
 	{
 	    Debug.Log("hi   ");
+	    Debug.Log("我在试试");
 	}
 
    
