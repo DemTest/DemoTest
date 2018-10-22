@@ -14,11 +14,22 @@ public class ZhaDai : MonoBehaviour {
 	void Update ()
 	{
 
+<<<<<<< HEAD
 	    Debug.Log("hi  你好，我的git ");
         Debug.Log("bwsnbb测试");
 
 	    Debug.Log("hi   ");
 	    Debug.Log("我在试试");
+=======
+	    Debug.Log("hi   ");
+	    Debug.Log("我在试试");
+
+	    Debug.Log("hi  你好，我的git ");
+        Debug.Log("bwsnbb测试");
+
+	    Debug.Log("hi  你好，我的git ");
+        Debug.Log("bwsnbb测试");
+>>>>>>> 04a531ae282027b0ab1ee297b201a91abdf10a45
 	}
 
    
