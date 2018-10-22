@@ -628,6 +628,7 @@ CanvasRenderer:
   m_GameObject: {fileID: 1160560838}
   m_CullTransparentMesh: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 --- !u!1 &1274547869
 GameObject:
@@ -800,6 +801,8 @@ Transform:
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 >>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> b19d5b9cd203e95a7d0eb5f1f3fbbd89b3ad1d7d
 --- !u!1 &1608216664
 GameObject:
   m_ObjectHideFlags: 0

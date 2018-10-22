@@ -13,6 +13,7 @@ public class ZhaDai : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
+<<<<<<< HEAD
 
 	    Debug.Log("hi   ");
 	    Debug.Log("我在试试");
@@ -20,6 +21,10 @@ public class ZhaDai : MonoBehaviour {
 	    Debug.Log("hi  你好，我的git ");
         Debug.Log("bwsnbb测试");
 
+=======
+	    Debug.Log("hi  你好，我的git ");
+        Debug.Log("bwsnbb测试");
+>>>>>>> b19d5b9cd203e95a7d0eb5f1f3fbbd89b3ad1d7d
 	}
 
    
