@@ -8,13 +8,22 @@ public class RayTest : MonoBehaviour {
 	void Start () {
 		
 	}
-	
-	// Update is called once per frame
+    RaycastHit hit;
 	void Update ()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButton(0))
         {
+            //使用主摄像机创建一根射线，射线的方向是我们鼠标点击的位置。
            Ray ray= Camera.main.ScreenPointToRay(Input.mousePosition);
+            //使用物理类检测射线的碰撞，并返回被碰撞物体的信息。
+            if (Physics.Raycast(ray, out hit))
+            {
+
+                if (hit.collider.gameObject.tag == "gold")
+                {
+                    Destroy(hit.collider.gameObject);
+                }
+            }
         }
 
 	}

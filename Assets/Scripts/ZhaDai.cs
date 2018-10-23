@@ -31,9 +31,16 @@ public class ZhaDai : MonoBehaviour {
         Debug.Log("lai");
         if (collision.gameObject.name=="Plane")
         {
-           
-            Destroy(this.gameObject);
+            Invoke("destriySelf", 1f);
+
         }
     }
 
+    void destriySelf()
+    {
+        Destroy(this.gameObject);
+    }
+    
+
 }
+
