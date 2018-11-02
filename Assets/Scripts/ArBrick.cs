@@ -10,6 +10,9 @@ public class ArBrick : MonoBehaviour {
     public GameObject bullet;//子弹预制体
     Rigidbody rigid;
     public Transform brickParent;
+    public Transform BulletParent;
+
+
     // Use this for initialization
     void Start() {
         CreateBrick();
@@ -30,8 +33,10 @@ public class ArBrick : MonoBehaviour {
         {
             for (int j = 0; j < 5; j++)
             {
-                GameObject _Brick= Instantiate(brick, new Vector3(i, j, 0), Quaternion.identity);
+                GameObject _Brick = Instantiate(brick, new Vector3(i, j, 0), Quaternion.identity);
+                _Brick.GetComponent<MeshRenderer>().material.color = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f));
                 _Brick.transform.parent = brickParent;
+                
 
             }
         }
@@ -51,6 +56,7 @@ public class ArBrick : MonoBehaviour {
             {
                 
                 GameObject _bullet= Instantiate(bullet, this.transform.position, Quaternion.identity);
+                _bullet.transform.parent = BulletParent;
                 Vector3 point = hit.point - this.transform.position;//子弹发射方向
                 _bullet.GetComponent<Rigidbody>().AddForce(point * 100);
             }
